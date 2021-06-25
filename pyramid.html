@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html >
+<head>
+  </head>
+<body>
+  <h2>Pyramid  pattern in javascript</h2>
+  <script>
+    n = prompt("enter the number of linee")
+    let string = "";
+    
+    for (let i = 1; i <= n; i++) {
+      
+      for (let j = n; j > i; j--) {
+        string += " ";
+      }
+     
+      for (let k = 0; k < i * 2 - 1; k++) {
+        string += "*";
+      }
+      string += "<br>";
+    }
+    document.write(`<pre>${string}</pre>`);
+  </script>
+</body>
+</html>
